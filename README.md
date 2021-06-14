@@ -49,7 +49,6 @@ Quality is 80 and it never alters.
 
 ## Getting Started
 
-Clone the repository. Run `./gradlew check`. There should be a single
-failing test.
+Clone the repository. Run `./gradlew build` or open in your favorite IDE.
 
-![image](https://user-images.githubusercontent.com/832455/121847835-7b1ee280-cce9-11eb-8be2-aa2d6fcf982c.png)
+![image](https://user-images.githubusercontent.com/832455/121853002-9a6d3e00-ccf0-11eb-9350-9a4fbe71ed3c.png)
