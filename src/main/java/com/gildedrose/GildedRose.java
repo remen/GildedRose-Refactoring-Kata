@@ -9,6 +9,8 @@ class GildedRose {
 
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
+            int originalQuality = items[i].quality;
+
             if (!items[i].name.equals("Aged Brie")
                     && !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 if (items[i].quality > 0) {
@@ -55,6 +57,14 @@ class GildedRose {
                     if (items[i].quality < 50) {
                         items[i].quality = items[i].quality + 1;
                     }
+                }
+            }
+
+            if (items[i].name.startsWith("Conjured")) {
+                if (items[i].quality != 0) {
+                    int currentItemQuality = items[i].quality;
+                    int diff = originalQuality - currentItemQuality;
+                    items[i].quality -= diff;
                 }
             }
         }
